@@ -47,6 +47,8 @@ class ApplyServiceTest {
 
         countDownLatch.await();
 
+        Thread.sleep(10000);
+
         assertThat(couponRepository.count()).isEqualTo(100);
     }
 }
